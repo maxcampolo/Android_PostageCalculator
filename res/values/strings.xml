@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PostageCalculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="welcome">Welcome to USPS postage calculator. Please enter the information below to get started.</string>
+    <string name="package_type">Select package type: </string>
+    <string name="package_type_letter">Letter</string>
+    <string name="package_type_envelope">envelope</string>
+    <string name="package_type_package">package</string>
+    <string name="package_weight">valid range: 0-13 oz</string>
+    <string name="package_weight_prompt">Enter package weight: </string>
+    <string name="ounces">oz</string>
+    <string name="calculate">calculate</string>
+    <string name="regulations">regulations</string>
+    <string name="title_activity_regulations">RegulationsActivity</string>
+    
+    <string name="rulesandregs_title">Rules and Regulations</string>
+    <string name="letter_regs_title">Letters</string>
+    <string name="envelope_regs_title">Envelopes</string>
+    <string name="package_regs_title">Packages</string>
+
+</resources>

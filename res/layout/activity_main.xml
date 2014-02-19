@@ -1,0 +1,109 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+<RelativeLayout 
+ 	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity" >
+
+ 
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/welcome" />
+    
+     <TextView
+        android:id="@+id/package_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/package_type" 
+        android:layout_below="@id/welcome_message"/>
+     
+     <RadioGroup 
+         android:id="@+id/package_type_radio_group"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="10dp"
+         android:orientation="vertical"
+         android:layout_below="@id/package_type">
+         
+         <RadioButton
+             android:id="@+id/radiobutton_letter"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/package_type_letter" />
+         
+         <RadioButton
+             android:id="@+id/radiobutton_envelope"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/package_type_envelope" />
+         
+         <RadioButton
+             android:id="@+id/radiobutton_package"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/package_type_package" />
+             
+     </RadioGroup>
+   
+	   <TextView
+	       android:id="@+id/text_package_weight"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_marginTop="30dp"
+	       android:text="@string/package_weight_prompt" 
+	       android:layout_alignParentLeft="true" 
+	       android:layout_below="@id/package_type_radio_group"/>    
+         
+	   <EditText
+	       android:id="@+id/textfield_weight"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_marginTop="10dp"
+	       android:inputType="numberDecimal"
+	       android:hint="@string/package_weight" 
+	       android:layout_alignParentLeft="true"
+	       android:layout_below="@id/text_package_weight"
+	       />      
+	   <TextView
+	       android:id="@+id/text_ounces"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_marginTop="30dp"
+	       android:text="@string/ounces"
+	       android:layout_toRightOf="@id/textfield_weight" 
+	       android:layout_below="@id/text_package_weight"
+	       />
+	   
+	   <Button 
+	       android:id="@+id/button_calculate"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_marginTop="30dp"
+	       android:text="@string/calculate"
+	       android:layout_centerHorizontal="true" 
+	       android:layout_below="@id/textfield_weight"/>
+	   <Button 
+	       android:id="@+id/button_regulations"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:text="@string/regulations"
+	       android:layout_below="@id/button_calculate"
+	       android:layout_alignParentRight="true" />
+	    
+
+	
+</RelativeLayout>
+
+</ScrollView>
